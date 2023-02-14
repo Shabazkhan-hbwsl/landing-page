@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+.main{
+    position: relative;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #eee;
+}
+
+header {
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #eee;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li {
+    width: 240px;
+    margin-left: -16px;
+}
+
+#header-img {
+    width: 305px;
+    margin-left: -16px;
+}
+
+@media screen and (max-width:650px) {
+    header {
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
+        background-color: #eee;
+    }
+
+    #nav-bar ul {
+        display: block;
+        text-align: center;
+    }
+
+    #header-img {
+        margin: 16px 0;
+        text-align: center;
+    }
+}
+@media (min-width:651px) and (max-width:1200px) {
+    #nav-bar ul {
+        display: flex;
+    }
+    
+    #nav-bar ul li {
+        width: 127px;
+margin-left: 29px;
+margin-right: -42px;
+    }
+    
+    #header-img {
+        width: 305px;
+        margin-left: -16px;
+    }
+
+}
+@media (min-width:900px) and (max-width:1200px) {
+    #nav-bar ul {
+        display: flex;
+    }
+    
+    #nav-bar ul li {
+        width: 117px;
+margin-left: 58px;
+    }
+    
+    #header-img {
+        width: 305px;
+        margin-left: -16px;
+    }
+
+}
+.email {
+    text-align: center;
+    margin: 32px auto;
+    margin-top: 100px;
+}
+
+.email h2 {
+    margin-bottom: 20px;
+}
+
+.email input {
+    padding: 4.8px;
+    display: block;
+    margin: 14.5px auto;
+}
+
+.email input#email {
+    width: 250px;
+}
+
+.email #input {
+    width: 180px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f1c40f;
+    border-radius: 4px;
+    
+}
+
+#input:hover {
+    cursor: pointer;
+    background-color: #f38b3f;
+}
+#featured{
+    margin-top: 100px;
+}
+.featured-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.featured-icon i {
+    font-size: 60px;
+    color: #f38b3f;
+    width: 50px;
+}
+
+.featured-text {
+    margin-left: 56px;
+}
+
+.featured-text h2 {
+    font-size: 24px;
+}
+
+@media screen and (max-width:650px) {
+    .featured-wrapper {
+        flex-direction: column;
+    }
+
+    .featured-text {
+        margin: 0;
+        text-align: center;
+    }
+
+    .featured-icon i {
+        display: none;
+    }
+}
+#video {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#price {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    flex-direction: row;
+}
+.price-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+line-height: 1.9;
+width: calc(100% / 3);
+margin: 10px;
+border: 1px solid #000;
+border-radius: 3px;
+}
+
+.price-box h4 {
+    background-color: #ddd;
+color: black;
+padding: 15px 0;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.price-box .price {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.price-box .btn {
+    border: 0;
+    margin: 15px 0px;
+    padding:11px 20px;
+    background-color: #f1c40f;
+text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.price-box .btn:hover {
+    background-color: #f38b3f;
+}
+
+footer {
+    background: #ddd;
+    text-align: end;
+    padding: 16px 8px;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-nav ul li {
+    margin-left: 24px;
+}
+
+.footer-nav ul li a {
+    color: #111;
+}
+
+.footer-copyright {
+    opacity: 0.9;
+}
+@media (max-width: 800px) {
+    #price {
+      flex-direction: column;
+    }
+    .price-box {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
